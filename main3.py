@@ -142,7 +142,6 @@ def train_encoder(args):
 def train_decoder(args):
     if args.encoder:
         model_gat = GAT(args)
-        print('Hello Mario')
         if args.cuda is not None and int(args.cuda) >= 0:
             model_gat = model_gat.to(args.device)
             model_gat.load_state_dict(
