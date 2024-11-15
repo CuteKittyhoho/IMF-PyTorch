@@ -110,6 +110,7 @@ def train_encoder(args):
         model = model.to(args.device)
 
     # Train Model
+    print("Hello Kitty")
     t_total = time.time()
     corpus.batch_size = len(corpus.train_triples)
     corpus.neg_num = 2
