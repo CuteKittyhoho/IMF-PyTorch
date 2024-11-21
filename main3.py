@@ -239,6 +239,7 @@ def train_decoder(args):
         torch.save(model.state_dict(), f'./checkpoint/{args.dataset}/{args.model}.pth')
         print('Saved model!')
         print('我爱北京天安门')
+        print('天安门上太阳升')
 
 
 if __name__ == '__main__':
